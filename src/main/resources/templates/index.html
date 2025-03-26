@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{style.css}">
+</head>
+<body>
+  <h1 class="PageTitle">The Blog</h1>
+
+<ul class="blogPostList">
+    <li th:each="blogPost : ${blogPosts}" class="listElement">
+        <a th:href="@{/post/{id}(id=${blogPost.getId()})}" class="blogBox">
+            <div class="imageBox">
+                <img th:src="@{'/img/' + ${blogPost.image}}" class="previewImg">
+            </div>
+            <div class="titleBox">
+                <h1 th:text="${blogPost.getTitle()}" class="blogTitle">Fallback title</h1>
+            </div>
+            <div class="prevText">
+                <p th:text="${blogPost.getContent()}">Placeholder preview Text</p>
+            </div>
+        </a>
+    </li>
+</ul>
+</body>
+</html>

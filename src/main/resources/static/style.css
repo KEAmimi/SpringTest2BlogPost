@@ -1,0 +1,78 @@
+.PageTitle{
+    text-align: center;
+    font-family: "Helvetica Neue";
+    margin-top: 30px;
+}
+
+.blogBox{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,100,.2) 5px 5px 20px;
+    padding: 20px;
+    margin: 30px;
+    transition: .3s ease;
+    text-decoration: none !important;
+}
+
+.blogBox:hover{
+    transform: scale(104%);
+    transition: .3s ease;
+}
+
+.listElement{
+    all: unset;
+}
+
+.blogPostList{
+all: unset;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.imageBox{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.previewImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.titleBox{
+
+}
+
+.blogTitle{
+    font-family: "Helvetica Neue";
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.prevText{
+    height: 120px;
+    overflow: hidden;
+    font-family: "Helvetica Neue";
+    color: lightgray;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+body{
+    background-color: #f1f1f1;
+}
